@@ -4,5 +4,5 @@ tags={
 	"Decisions"
 	"Gameplay"
 }
-name="Crusader Kings Z"
+name="Saiyan Crusade"
 supported_version="1.6.1.2"
