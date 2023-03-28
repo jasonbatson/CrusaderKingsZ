@@ -1,0 +1,70 @@
+# Races
+dbz_race_saiyan = {
+
+	same_opinion = 10
+	
+	# benefits
+	health = 1
+	monthly_martial_lifestyle_xp_gain_mult = 1.0
+	prowess = 20
+	no_prowess_loss_from_age = yes
+
+	# type
+	physical = yes
+
+	# genetic/inheritance
+	inherit_chance = 100
+	both_parent_has_trait_inherit_chance = 100
+	birth = 0
+	random_creation = 0
+
+	ruler_designer_cost = 0
+
+	ai_boldness = medium_positive_ai_value
+}
+
+# dbz_race_half_saiyan = {
+
+# 	same_opinion = 10
+
+# 	# benefits
+# 	health = 0.5
+# 	martial = 2
+# 	prowess = 20
+# 	no_prowess_loss_from_age = yes
+
+# 	# type
+# 	physical = yes
+
+# 	# genetic/inheritance
+# 	inherit_chance = 100
+# 	both_parent_has_trait_inherit_chance = 100
+# 	birth = 0
+# 	random_creation = 0
+# }
+
+# Saiyan-specific traits
+
+dbz_saiyan_legend = {
+
+	fame = yes
+	
+	# benefits
+	prowess = 80
+
+	max_combat_roll = 10
+	siege_phase_time = -0.9
+	enemy_hard_casualty_modifier = 1
+	raid_speed = 1.0
+	hostile_county_attrition = -0.75
+
+	monthly_prestige = 1.0
+
+	# genetic/inheritance
+	inherit_chance = 0
+	both_parent_has_trait_inherit_chance = 0
+	birth = 0
+	random_creation = 0
+
+	ruler_designer_cost = 0
+}

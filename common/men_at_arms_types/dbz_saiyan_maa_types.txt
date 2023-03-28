@@ -1,0 +1,41 @@
+# standard costs
+@maa_buy_cost = 150
+@maa_low_maintenance_cost = 1.0
+@maa_high_maintenance_cost = 5.0
+@cultural_maa_extra_ai_score = 60 # Equivalent to having 6 extra regiments beyond what the code scoring would indicate (see NEGATIVE_SCORE_PER_EXISTING_REGIMENT)
+
+saiyan_warriors = {
+	type = heavy_infantry
+	
+	damage = 200
+	toughness = 100
+	pursuit = 50
+	screen = 50
+	
+	can_recruit = {
+		culture = { has_cultural_parameter = unlock_maa_saiyan_warriors }
+	}
+	
+	terrain_bonus = {
+		farmlands = { damage = 10 }
+		plains = { damage = 10 }
+	}
+
+	counters = {
+		skirmishers = 1
+		pikemen = 1
+		heavy_infantry = 1
+		archers = 1
+		light_cavalry = 1
+		heavy_cavalry = 1
+		siege_weapon = 1
+	}
+
+	buy_cost = { gold = heavy_infantry_recruitment_cost }
+	low_maintenance_cost = { gold = heavy_infantry_low_maint_cost }
+	high_maintenance_cost = { gold = heavy_infantry_high_maint_cost }
+	
+	stack = 25
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = varangian_veterans
+}

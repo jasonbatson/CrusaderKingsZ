@@ -1,0 +1,9 @@
+dbz_create_saiyan_child_effect = {
+	create_character = {
+		save_temporary_scope_as = dbz_found_child
+		location = $WHO$.capital_province
+		faith = $WHO$.faith
+
+		template = dbz_saiyan_child_template
+	}
+}

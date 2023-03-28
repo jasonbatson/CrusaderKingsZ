@@ -1,0 +1,209 @@
+namespace = dbz_adventure
+
+# Adventure Start
+dbz_adventure.0001 = {
+	type = character_event
+	title = dbz_adventure.0001.t
+	desc = dbz_adventure.0001.desc
+
+	left_portrait = root
+
+	immediate = {
+		# Stop characters from planning multiple activities at once.
+		add_character_flag = {
+			flag = planning_an_activity
+			days = 30
+		}
+	}
+
+	option = {
+		name = dbz_adventure.0001.a
+		dbz_adventure_start_effect = { }
+	}
+
+	after = {
+		remove_character_flag = planning_an_activity
+	}
+}
+
+dbz_adventure.0002 = {
+	type = character_event
+	title = dbz_adventure.0002.t
+	desc = dbz_adventure.0002.desc
+
+	left_portrait = root
+
+	option = {
+		name = dbz_adventure.0002.a
+	}
+
+	after = {
+		set_up_next_adventure_event_effect = { DAYS = 30 }
+	}
+}
+
+# Find Saiyan Child
+dbz_adventure.1001 = {
+	type = character_event
+	title = dbz_adventure.1001.t
+	desc = dbz_adventure.1001.desc
+
+	left_portrait = root
+	right_portrait = scope:dbz_saiyan_child_found
+
+	immediate = {
+		dbz_create_saiyan_child_effect = { WHO = root }
+		scope:dbz_found_child = {
+			save_scope_as = dbz_saiyan_child_found
+		}
+	}
+
+	option = { # Adopt
+		name = dbz_adventure.1001.a
+		
+		scope:dbz_saiyan_child_found = {
+			set_house = root.house
+			if = {
+				limit = { root = { is_female = yes } }
+				set_mother = root
+			}
+			else = {
+				set_father = root
+			}
+		}
+
+		root = {
+			scriptedtests_recalculate_succession = yes
+		}
+	
+		if = {
+			limit = {
+				scope:dbz_saiyan_child_found = {
+					NOT = {
+						is_courtier_of = root
+					}
+				}
+			}
+			root = {
+				add_courtier = scope:dbz_saiyan_child_found
+			}
+		}
+	}
+
+	
+
+	option = { # Bring to court
+	name = dbz_adventure.1001.b
+
+		if = {
+			limit = {
+				scope:dbz_saiyan_child_found = {
+					NOT = {
+						is_courtier_of = root
+					}
+				}
+			}
+			root = {
+				add_courtier = scope:dbz_saiyan_child_found
+			}
+		}
+	}
+
+	option = { # Abandom
+		name = dbz_adventure.1001.c
+	}
+
+	after = {
+		set_up_next_adventure_event_effect = { DAYS = 30 }
+	}
+}
+
+# Find foreign princess (Chi Chi)
+
+# Make friends with a bandit (Yamcha)
+
+# Meet assassin (Tao)
+
+dbz_adventure.4001 = {
+	type = character_event
+	title = dbz_adventure.4001.t
+	desc = dbz_adventure.4001.desc
+
+	left_portrait = root
+
+	trigger = {
+		exists = scope:activity
+	}
+
+	option = {
+		name = dbz_adventure.4001.a
+		
+		give_adventure_reward_effect = yes
+	}
+
+	after = {
+		trigger_event = {
+			on_action = dbz_adventure_return_events
+			days = 30
+		}
+	}
+}
+
+dbz_adventure.9001 = {
+	type = character_event
+	title = dbz_adventure.9001.t
+	desc = dbz_adventure.9001.desc
+	left_portrait = root
+
+	trigger = {
+		exists = scope:activity
+	}
+
+	immediate = {
+		# Creates a character memory of the completed pilgrimage
+		# if = {
+		# 	limit = { exists = scope:activity.var:friend_companion }
+		# 	create_character_memory = {
+		# 		type = completed_pilgrimage_friend 
+		# 		participants = { friend = scope:activity.var:friend_companion }
+		# 	}
+		# }
+		# else = {
+		# 	create_character_memory = {
+		# 		type = completed_pilgrimage 
+		# 	}
+		# }
+
+		# scope:new_memory = {
+		# 	set_variable = {
+		# 		name = destination
+		# 		value = scope:activity.activity_province
+		# 	} 
+		# }
+	}
+	
+	option = {
+		name = dbz_adventure.9001.a
+		scope:activity = {
+			complete_activity = yes
+		}
+	}
+}
+
+####################
+# Support events
+####################
+# Fallback in case no journey event fires. That shouldn't be, but just this exists just in case
+dbz_adventure.9999 = {
+	hidden = yes
+
+	trigger = {
+		exists = scope:activity # If the Activity has been removed, the chain just dies here
+	}
+
+	immediate = {
+		set_up_next_adventure_event_effect = {
+			DAYS = 10
+		}
+	}
+}

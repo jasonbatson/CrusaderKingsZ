@@ -1,0 +1,2 @@
+﻿l_english:
+ culture_parameter_unlock_maa_saiyan_warriors:0 "Can recruit [GetMaA('saiyan_warriors').GetName] as [men_at_arms|E]"

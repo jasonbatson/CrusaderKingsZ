@@ -1,0 +1,8 @@
+dbz_evil = {
+	liege_opinion = -100
+	vassal_opinion = -100
+	independent_ruler_opinion = -50
+	same_opinion = 150
+
+	ruler_designer_cost = 0
+}

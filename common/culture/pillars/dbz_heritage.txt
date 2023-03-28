@@ -1,0 +1,3 @@
+heritage_saiyan = {
+	type = heritage
+}

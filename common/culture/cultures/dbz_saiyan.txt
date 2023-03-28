@@ -1,0 +1,22 @@
+saiyan = {
+    color = { 0 0 0 }
+
+    ethos = ethos_bellicose
+	heritage = heritage_saiyan
+	language = language_saiyan
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_saiyan_warrior
+	}
+	
+	name_list = name_list_saiyan
+	
+	coa_gfx = { norse_coa_gfx }
+	building_gfx = { norse_building_gfx }
+	clothing_gfx = { northern_clothing_gfx }
+	unit_gfx = { norse_unit_gfx }
+	
+	ethnicities = {
+		10 = caucasian_northern_dark_hair #TODO
+	}
+}

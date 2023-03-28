@@ -1,0 +1,40 @@
+# Saiyan Modifiers
+dbz_saiyan = {
+	dbz_race_saiyan = {
+		traits = {
+			dbz_race_saiyan
+		}
+		dna_modifiers = {
+			color = {
+				gene = hair_color
+				mode = modify
+
+				x = -1.0 # TODO: Fix this so hair is actually black
+				y = 1.0
+			}
+			color = {
+				gene = eye_color
+				mode = modify
+
+				x = 1.0
+				y = 1.0
+			}
+		}
+	}
+}
+
+dbz_saiyan_legend = {
+	dbz_saiyan_legend = {
+		traits = {
+			dbz_saiyan_legend
+		}
+		dna_modifiers = {
+			morph = {
+				mode = modify_multiply
+				gene = gene_height
+				template = giant_height
+				value = 0
+			}
+		}
+	}
+}

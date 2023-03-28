@@ -1,0 +1,71 @@
+give_adventure_reward_effect = {
+	add_prestige = 1000
+}
+
+dbz_adventure_start_effect = {
+	hidden_effect = {
+		set_variable = {
+			name = dbz_adventure_cooldown_timer
+			years = 1
+		}
+	}
+
+	liege.capital_province = {
+		spawn_activity = {
+			type = activity_dbz_adventure
+			owner = root
+		}
+	}
+}
+
+set_up_next_adventure_event_effect = {
+	scope:activity = {
+		change_variable = {
+			name = journey_event_counter
+			add = 1
+		}
+	}
+
+	save_scope_value_as = {
+		name = event_counter
+		value = scope:activity.var:journey_event_counter
+	}
+
+	if = {
+		limit = { # TODO_CD Is any fallback handling needed in an else here?
+			exists = scope:activity
+		}
+		if = {
+			limit = {
+				scope:activity.var:journey_event_counter = {
+					compare_value < scope:activity.var:dbz_adventure_distance
+				}
+			}
+			trigger_event = {
+				on_action = dbz_adventure_journey_events
+				days = $DAYS$
+			}
+		}
+		else = {
+			if = { #For event background
+				limit = { scope:activity.var:dbz_adventure_arrived = no }
+				scope:activity = {
+					set_variable = {
+						name = dbz_adventure_arrived
+						value = yes
+					}
+				}
+			}
+			trigger_event = {
+				on_action = dbz_adventure_destination_events
+				days = $DAYS$
+			}
+		}
+		scope:activity = {
+			change_variable = {
+				name = journey_event_counter
+				add = 1
+			}
+		}
+	}
+}

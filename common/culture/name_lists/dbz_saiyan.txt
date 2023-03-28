@@ -1,0 +1,24 @@
+name_list_saiyan = {
+	
+	dynasty_names = {
+		"dynn_vegeta"
+	}
+
+	male_names = {
+		Basil Nappa Bardock Beets Borgos Broly Paragus Shallot Cabba Cumber Giblet Yamoshi Leek Moroko Onio Raditz Shugesh Tarble Taro Tora Turles Vegeta Zorn
+	}
+
+	female_names = {
+		Kale Caulifla Fasha Gine Nion
+	}
+
+	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+	pat_grf_name_chance = 50
+	mat_grf_name_chance = 40
+	father_name_chance = 0
+	
+	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+	pat_grm_name_chance = 30
+	mat_grm_name_chance = 30
+	mother_name_chance = 0
+}

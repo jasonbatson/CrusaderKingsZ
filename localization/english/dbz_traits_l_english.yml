@@ -1,0 +1,11 @@
+﻿l_english:
+#Reasons
+ trait_dbz_race_saiyan:0 "Saiyan"
+ trait_dbz_race_saiyan_desc:0 "This character is member of a proud warrior race that is not of this world."
+ trait_dbz_race_saiyan_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is member of a proud warrior race that is not of this world."
+ trait_dbz_saiyan_legend:0 "Saiyan Legend"
+ trait_dbz_saiyan_legend_desc:0 "Born once every thousand years, this character is a Saiyan legend."
+ trait_dbz_saiyan_legend_character_desc:0 "Born once every thousand years, [ROOT.GetCharacter.GetFirstNameNoTooltip] is a Saiyan legend."
+ trait_dbz_evil:0 "Evil"
+ trait_dbz_evil_desc:0 "This character is a villain."
+ trait_dbz_evil_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a villan."

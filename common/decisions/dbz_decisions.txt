@@ -1,0 +1,25 @@
+go_on_adventure_decision = {
+	desc = go_on_adventure_decision_desc
+
+	cooldown = { days = 1 }
+
+	is_shown = { 
+		is_ai = no
+	}
+
+	is_valid_showing_failures_only = { # No idea what this does
+		always = yes
+	}
+
+	is_valid = {
+		gold >= 0
+	}
+
+	effect = {
+		trigger_event = dbz_adventure.0001
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
