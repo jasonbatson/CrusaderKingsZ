@@ -1,0 +1,223 @@
+create_artifact_one_star_dragonball_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = dragonball_artifact_name_one_star
+		description = dragonball_artifact_desc_one_star
+		template = dragonball_template
+		type = one_star_dragonball
+		visuals = one_star_dragonball
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created_before_history
+			date = 670.1.1 #To order entries correctly
+		}
+		modifier = artifact_dragonball_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+	}
+
+	scope:owner.house = {
+		add_house_artifact_claim = scope:newly_created_artifact
+	}
+}
+
+create_artifact_two_star_dragonball_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = dragonball_artifact_name_two_star
+		description = dragonball_artifact_desc_two_star
+		template = dragonball_template
+		type = two_star_dragonball
+		visuals = two_star_dragonball
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created_before_history
+			date = 670.1.1 #To order entries correctly
+		}
+		modifier = artifact_dragonball_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+	}
+
+	scope:owner.house = {
+		add_house_artifact_claim = scope:newly_created_artifact
+	}
+}
+
+create_artifact_three_star_dragonball_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = dragonball_artifact_name_three_star
+		description = dragonball_artifact_desc_three_star
+		template = dragonball_template
+		type = three_star_dragonball
+		visuals = three_star_dragonball
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created_before_history
+			date = 670.1.1 #To order entries correctly
+		}
+		modifier = artifact_dragonball_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+	}
+
+	scope:owner.house = {
+		add_house_artifact_claim = scope:newly_created_artifact
+	}
+}
+
+create_artifact_four_star_dragonball_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = dragonball_artifact_name_four_star
+		description = dragonball_artifact_desc_four_star
+		template = dragonball_template
+		type = four_star_dragonball
+		visuals = four_star_dragonball
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created_before_history
+			date = 670.1.1 #To order entries correctly
+		}
+		modifier = artifact_dragonball_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+	}
+
+	scope:owner.house = {
+		add_house_artifact_claim = scope:newly_created_artifact
+	}
+}
+
+create_artifact_five_star_dragonball_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = dragonball_artifact_name_five_star
+		description = dragonball_artifact_desc_five_star
+		template = dragonball_template
+		type = five_star_dragonball
+		visuals = five_star_dragonball
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created_before_history
+			date = 670.1.1 #To order entries correctly
+		}
+		modifier = artifact_dragonball_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+	}
+
+	scope:owner.house = {
+		add_house_artifact_claim = scope:newly_created_artifact
+	}
+}
+
+create_artifact_six_star_dragonball_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = dragonball_artifact_name_six_star
+		description = dragonball_artifact_desc_six_star
+		template = dragonball_template
+		type = six_star_dragonball
+		visuals = six_star_dragonball
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created_before_history
+			date = 670.1.1 #To order entries correctly
+		}
+		modifier = artifact_dragonball_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+	}
+
+	scope:owner.house = {
+		add_house_artifact_claim = scope:newly_created_artifact
+	}
+}
+
+create_artifact_seven_star_dragonball_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = dragonball_artifact_name_seven_star
+		description = dragonball_artifact_desc_seven_star
+		template = dragonball_template
+		type = seven_star_dragonball
+		visuals = seven_star_dragonball
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created_before_history
+			date = 670.1.1 #To order entries correctly
+		}
+		modifier = artifact_dragonball_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+	}
+
+	scope:owner.house = {
+		add_house_artifact_claim = scope:newly_created_artifact
+	}
+}

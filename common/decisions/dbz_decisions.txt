@@ -1,3 +1,25 @@
+dbz_debug_decision = {
+	desc = dbz_debug_decision_desc
+
+	is_shown = { 
+		is_ai = no
+		has_game_rule = dbz_debug_on
+	}
+
+	is_valid = {
+		is_ai = no
+		has_game_rule = dbz_debug_on
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+
+	effect = {
+		trigger_event = dbz_debug.0001
+	}
+}
+
 go_on_adventure_decision = {
 	desc = go_on_adventure_decision_desc
 
@@ -21,5 +43,88 @@ go_on_adventure_decision = {
 
 	ai_will_do = {
 		base = 0
+	}
+}
+
+summon_shenron_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	major = yes
+	desc = summon_shenron_decision_desc
+
+	is_shown = {
+		any_character_artifact = {
+			OR = {
+				artifact_type = one_star_dragonball
+				artifact_type = two_star_dragonball
+				artifact_type = three_star_dragonball
+				artifact_type = four_star_dragonball
+				artifact_type = five_star_dragonball
+				artifact_type = six_star_dragonball
+				artifact_type = seven_star_dragonball
+			}
+		}
+	}
+
+	is_valid = {
+		
+		AND = {
+			custom_description = {
+				text = has_one_star_dragonball
+				any_character_artifact = {
+					artifact_type = one_star_dragonball
+				}
+			}
+			custom_description = {
+				text = has_two_star_dragonball
+				any_character_artifact = {
+					artifact_type = two_star_dragonball
+				}
+			}
+			custom_description = {
+				text = has_three_star_dragonball
+				any_character_artifact = {
+					artifact_type = three_star_dragonball
+				}
+			}
+			custom_description = {
+				text = has_four_star_dragonball
+				any_character_artifact = {
+					artifact_type = four_star_dragonball
+				}
+			}
+			custom_description = {
+				text = has_five_star_dragonball
+				any_character_artifact = {
+					artifact_type = five_star_dragonball
+				}
+			}
+			custom_description = {
+				text = has_six_star_dragonball
+				any_character_artifact = {
+					artifact_type = six_star_dragonball
+				}
+			}
+			custom_description = {
+				text = has_seven_star_dragonball
+				any_character_artifact = {
+					artifact_type = seven_star_dragonball
+				}
+			}
+		}
+	}
+
+	effect = {
+		trigger_event = dbz_artifacts.0008
+		save_scope_as = actor
+	}
+
+	ai_check_interval = 36
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
 	}
 }

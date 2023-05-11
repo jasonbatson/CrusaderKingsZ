@@ -1,0 +1,6 @@
+﻿l_english:
+ rule_dbz_debug:0 "Crusader Kings Z Debug Mode"
+ setting_dbz_debug_off:0 "Off"
+ setting_dbz_debug_off_desc:0 "Disables debug menu used for testing"
+ setting_dbz_debug_on:0 "On"
+ setting_dbz_debug_on_desc:0 "Enables debug menu used for testing"

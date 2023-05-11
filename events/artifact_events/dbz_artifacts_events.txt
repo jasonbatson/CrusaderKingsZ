@@ -1,0 +1,183 @@
+namespace = dbz_artifacts
+
+dbz_artifacts.0001 = {
+	type = character_event
+
+	left_portait = root
+
+	option = {
+		name = dbz_artifacts.0001.a
+		if = {
+			limit = { has_royal_court = yes }
+			create_artifact_one_star_dragonball_effect = {
+				OWNER = root
+			}
+		}
+	}
+}
+
+dbz_artifacts.0002 = {
+	type = character_event
+
+	left_portait = root
+
+	option = {
+		name = dbz_artifacts.0002.a
+		if = {
+			limit = { has_royal_court = yes }
+			create_artifact_two_star_dragonball_effect = {
+				OWNER = root
+			}
+		}
+	}
+}
+
+dbz_artifacts.0003 = {
+	type = character_event
+
+	left_portait = root
+
+	option = {
+		name = dbz_artifacts.0003.a
+		if = {
+			limit = { has_royal_court = yes }
+			create_artifact_three_star_dragonball_effect = {
+				OWNER = root
+			}
+		}
+	}
+}
+
+dbz_artifacts.0004 = {
+	type = character_event
+
+	left_portait = root
+
+	option = {
+		name = dbz_artifacts.0004.a
+		if = {
+			limit = { has_royal_court = yes }
+			create_artifact_four_star_dragonball_effect = {
+				OWNER = root
+			}
+		}
+	}
+}
+
+dbz_artifacts.0005 = {
+	type = character_event
+
+	left_portait = root
+
+	option = {
+		name = dbz_artifacts.0005.a
+		if = {
+			limit = { has_royal_court = yes }
+			create_artifact_five_star_dragonball_effect = {
+				OWNER = root
+			}
+		}
+	}
+}
+
+dbz_artifacts.0006 = {
+	type = character_event
+
+	left_portait = root
+
+	option = {
+		name = dbz_artifacts.0006.a
+		if = {
+			limit = { has_royal_court = yes }
+			create_artifact_six_star_dragonball_effect = {
+				OWNER = root
+			}
+		}
+	}
+}
+
+dbz_artifacts.0007 = {
+	type = character_event
+
+	left_portait = root
+
+	option = {
+		name = dbz_artifacts.0007.a
+		if = {
+			limit = { has_royal_court = yes }
+			create_artifact_seven_star_dragonball_effect = {
+				OWNER = root
+			}
+		}
+	}
+}
+
+dbz_artifacts.0008 = {
+	type = character_event
+	title = dbz_artifacts.0008.title
+	desc = dbz_artifacts.0008.desc
+	theme = faith
+
+	left_portait = {
+		character = root
+		animation = idle
+	}
+
+	immediate = {
+		every_character_artifact = {
+			limit = {
+				OR = {
+					artifact_type = one_star_dragonball
+					artifact_type = two_star_dragonball
+					artifact_type = three_star_dragonball
+					artifact_type = four_star_dragonball
+					artifact_type = five_star_dragonball
+					artifact_type = six_star_dragonball
+					artifact_type = seven_star_dragonball
+				}
+			}
+			destroy_artifact = this
+		}
+	}
+
+	# Immortality
+	option = {
+		name = dbz_artifacts.0008.a
+
+		add_trait = dbz_immortal_wish
+	}
+
+	# Riches
+	option = {
+		name = dbz_artifacts.0008.b
+
+		add_gold = 1000000
+
+		root.capital_county = {
+			change_development_level = 100
+		}
+	}
+
+	# Unleash Potential
+	option = {
+		name = dbz_artifacts.0008.c
+
+		add_martial_skill = 20
+		add_prowess_skill = 20
+		add_trait = strong
+	}
+
+	# Become Legendary Super Saiyan
+	option = {
+		name = dbz_artifacts.0008.d
+
+		trigger = {
+			AND = {
+				has_trait = dbz_race_saiyan
+				NOT = { has_trait = dbz_saiyan_legend }
+			}
+		}
+
+		add_trait = dbz_saiyan_legend
+	}
+}

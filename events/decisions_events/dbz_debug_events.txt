@@ -1,0 +1,67 @@
+namespace = dbz_debug
+
+# Debug Main Menu
+dbz_debug.0001 = {
+	type = character_event
+	title = dbz_debug.0001.t
+	desc = dbz_debug.0001.desc
+
+	left_portrait = root
+
+	option = {
+		name = dbz_debug.0001.a
+		trigger_event = dbz_debug.1001
+	}
+
+	option = {
+		name = dbz_debug.0001.b
+	}
+}
+
+dbz_debug.1001 = {
+	type = character_event
+	title = dbz_debug.1001.t
+	desc = dbz_debug.1001.desc
+
+	left_portrait = root
+
+	option = {
+		name = dbz_debug.1001.a
+		trigger_event = dbz_artifacts.0001
+	}
+
+	option = {
+		name = dbz_debug.1001.b
+		trigger_event = dbz_artifacts.0002
+	}
+
+	option = {
+		name = dbz_debug.1001.c
+		trigger_event = dbz_artifacts.0003
+	}
+
+	option = {
+		name = dbz_debug.1001.d
+		trigger_event = dbz_artifacts.0004
+	}
+
+	option = {
+		name = dbz_debug.1001.e
+		trigger_event = dbz_artifacts.0005
+	}
+
+	option = {
+		name = dbz_debug.1001.f
+		trigger_event = dbz_artifacts.0006
+	}
+
+	option = {
+		name = dbz_debug.1001.g
+		trigger_event = dbz_artifacts.0007
+	}
+
+	option = {
+		name = dbz_debug.1001.z
+		trigger_event = dbz_debug.0001
+	}
+}

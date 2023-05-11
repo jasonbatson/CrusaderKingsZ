@@ -1,0 +1,6 @@
+artifact_dragonball_modifier = {
+	monthly_prestige = 0.5
+	monthly_dynasty_prestige = 0.5
+	monthly_piety = 0.5
+	courtier_and_guest_opinion = 10
+}

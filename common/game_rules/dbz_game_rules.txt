@@ -1,0 +1,11 @@
+dbz_debug = {
+	default = dbz_debug_off 	# Which setting to default to
+
+	dbz_debug_off = {
+		
+	}
+
+	dbz_debug_on = {
+		flag = blocks_achievements
+	}
+}

@@ -1,0 +1,41 @@
+one_star_dragonball = {
+	icon = "artifact_reliquary.dds"
+	support_type = "tall_pillow"
+	asset = ep1_generic_rock_01_a_entity
+}
+
+two_star_dragonball = {
+	icon = "artifact_reliquary.dds"
+	support_type = "tall_pillow"
+	asset = ep1_generic_rock_01_a_entity
+}
+
+three_star_dragonball = {
+	icon = "artifact_reliquary.dds"
+	support_type = "tall_pillow"
+	asset = ep1_generic_rock_01_a_entity
+}
+
+four_star_dragonball = {
+	icon = "artifact_reliquary.dds"
+	support_type = "tall_pillow"
+	asset = ep1_generic_rock_01_a_entity
+}
+
+five_star_dragonball = {
+	icon = "artifact_reliquary.dds"
+	support_type = "tall_pillow"
+	asset = ep1_generic_rock_01_a_entity
+}
+
+six_star_dragonball = {
+	icon = "artifact_reliquary.dds"
+	support_type = "tall_pillow"
+	asset = ep1_generic_rock_01_a_entity
+}
+
+seven_star_dragonball = {
+	icon = "artifact_reliquary.dds"
+	support_type = "tall_pillow"
+	asset = ep1_generic_rock_01_a_entity
+}

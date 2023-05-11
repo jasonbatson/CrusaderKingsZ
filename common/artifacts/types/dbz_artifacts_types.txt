@@ -1,0 +1,35 @@
+one_star_dragonball = {
+	slot = pedestal
+	optional_features = { box_material box_decoration }
+	can_reforge = no
+}
+two_star_dragonball = {
+	slot = pedestal
+	optional_features = { box_material box_decoration }
+	can_reforge = no
+}
+three_star_dragonball = {
+	slot = pedestal
+	optional_features = { box_material box_decoration }
+	can_reforge = no
+}
+four_star_dragonball = {
+	slot = pedestal
+	optional_features = { box_material box_decoration }
+	can_reforge = no
+}
+five_star_dragonball = {
+	slot = pedestal
+	optional_features = { box_material box_decoration }
+	can_reforge = no
+}
+six_star_dragonball = {
+	slot = pedestal
+	optional_features = { box_material box_decoration }
+	can_reforge = no
+}
+seven_star_dragonball = {
+	slot = pedestal
+	optional_features = { box_material box_decoration }
+	can_reforge = no
+}
