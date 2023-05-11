@@ -1,5 +1,5 @@
 ﻿l_english:
- rule_dbz_debug:0 "Crusader Kings Z Debug Mode"
+ rule_dbz_debug:0 "Saiyan Crusade Debug Mode"
  setting_dbz_debug_off:0 "Off"
  setting_dbz_debug_off_desc:0 "Disables debug menu used for testing"
  setting_dbz_debug_on:0 "On"
