@@ -23,3 +23,15 @@ dbz_saiyan_child_template = {
 
 	trait = dbz_race_saiyan
 }
+
+dbz_martial_artist_master_template = {
+	age = { 50 60 }
+	random_traits = yes
+	martial  = {
+		10
+		20
+	}
+
+	trait = education_martialarts_5
+	dynasty = none
+}

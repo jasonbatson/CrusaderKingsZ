@@ -1,0 +1,34 @@
+dummy_perk = {
+	lifestyle = martialarts_lifestyle
+	tree = mysticism
+	position = { 2 0 }
+	icon = node_martial
+	
+	auto_selection_weight = {
+		value = 11
+		if = {
+			limit = {
+				has_education_martial_trigger = yes
+			}
+			add = 1989
+		}
+		if = {
+			limit = {
+				has_focus = martialarts_mysticism_focus
+			}
+			multiply = 5
+		}
+		if = {
+			limit = {
+				can_start_new_lifestyle_tree_trigger = no
+			}
+			multiply = 0
+		}
+	}
+	
+	effect = {
+		custom_description_no_bullet = {
+			text = bellum_justum_effect
+		}
+	}
+}

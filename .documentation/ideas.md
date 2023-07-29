@@ -3,6 +3,13 @@
 
 - Saiyan culture
 
+- Legendary Super Saiyan
+    - Still need to work out how this can be attained (other than dragonballs)
+
+- Dragon ball artifacts that can summon Shenron to grant a wish
+    - Still need to implement how to find the dragonballs
+    - Still needs art
+
 
 # Ideas to implement
 
@@ -37,11 +44,7 @@
 
 # Long term ideas
 
-- Martial Arts tournument
-
-- Dragon ball artifacts that can summon Shenron to grant a wish
-    - Probably easier to avoid making the artifacts specific starred dragonballs (not sure how to deal with duplicates)
-        - Maybe need to look at Excalibur in CK3 files
+- Martial Arts tournument (might be redundant with Tours and Tournuments)
 
 - Giving Saiyans an actual tail
 
