@@ -1,4 +1,4 @@
-martialarts_lifestyle = {
+dbz_martialarts_lifestyle = {
 
 	is_highlighted = {
 		has_trait = martial_artist
